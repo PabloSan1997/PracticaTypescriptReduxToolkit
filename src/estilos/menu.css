@@ -1,0 +1,44 @@
+.menu{
+    width: 40%;
+    height: fit-content;
+    margin:20px auto 0 auto;
+    background: rgb(27, 27, 27);
+    height: 50px;
+    display: flex;
+    border-radius: 20px;
+}
+.menu ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    height: fit-content;
+    margin: auto;
+}
+.menu ul li{
+    margin: auto;
+    height: fit-content;
+}
+.menu ul li a{
+    width: fit-content;
+    height: fit-content;
+    height: 500px;
+    text-decoration:none;
+    font-size: 1.5rem;
+    color: white;
+    padding: 2px;
+    border: 1px solid rgb(27, 27, 27);
+    border-radius: 5px;
+}
+.menu ul li a:hover{
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.171);
+}
+.menu ul li a.activado{
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.171);
+}
+@media (max-width:560px) {
+    .menu{
+        width: 90%;
+    }
+}

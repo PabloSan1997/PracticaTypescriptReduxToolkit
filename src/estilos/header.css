@@ -1,0 +1,76 @@
+
+header{
+    display: flex;
+    height: 50px;
+    background: rgb(20, 20, 20);
+    color: rgb(5, 0, 0);
+}
+header h1{
+    color: rgb(202, 202, 202);
+    margin: auto 0 auto 1%;
+}
+header .entrada{
+    height: fit-content;
+    margin: auto 0 auto 1%;
+    outline: none;
+    padding:1px 5px;
+    background: rgb(48, 47, 47);
+    padding: 2px;
+    color: white;
+    border: 2px solid rgb(53, 53, 53);
+}
+
+header button{
+    padding: 3px;
+    margin: auto auto auto 1%;
+    cursor: pointer;
+    border: 2px outset rgb(197, 195, 195);
+    border-radius: 5px;
+    background: rgb(27, 26, 26);
+    color: white;
+    font-weight: 600;
+}
+header button:hover{
+    background: black;
+}
+header button:active{
+    border:2px inset rgb(197, 195, 195);
+}
+header img{
+    width: 40px;
+    margin: auto 0 auto 1%;
+}
+@media (max-width:560px) {
+     header img{
+         max-width: 30px;
+         margin: auto;
+     }
+     header h1{
+        margin: auto;
+    }
+    header .entrada{
+        height: fit-content;
+        margin: auto;
+    }
+    header button{
+        margin: auto;
+    }
+}
+@media (max-width:382px) {
+    header img{
+        max-width: 25px;
+        margin: auto;
+    }
+    header h1{
+       font-size: 1.3rem;
+   }
+   header .entrada{
+       height: fit-content;
+       margin: auto;
+       font-size: .8rem;
+   }
+   header button{
+       margin: auto;
+       font-size: .7rem;
+   }
+}

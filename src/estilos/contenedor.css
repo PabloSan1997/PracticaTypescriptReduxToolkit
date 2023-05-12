@@ -1,0 +1,115 @@
+.contenedor {
+  margin: 20px auto 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.contenedor .caja {
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+  background: rgb(235, 235, 235);
+  display: flex;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.contenedor .caja.hecho{
+    background: rgb(225, 253, 225);
+}
+.contenedor .quitar {
+  background: rgb(248, 247, 247);
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: fit-content;
+  height: fit-content;
+  margin: auto 0 auto 2%;
+  padding: 1px 2px;
+}
+.contenedor .caja.hecho .quitar {
+    background: rgb(197, 241, 184);
+  }
+.contenedor .quitar:hover {
+  background: rgba(0, 0, 0, 0.281);
+  cursor: pointer;
+}
+.contenedor .caja.hecho .quitar:hover {
+    background: rgb(71, 197, 21);
+}
+.contenedor .caja .nombre{
+    margin: auto 0;
+    width: 60%;
+    height: 80%;
+    overflow-y: scroll;
+}
+.contenedor .caja .hora{
+    margin: auto;
+    max-width: 10%;
+    font-size: .8rem;
+    color:  gray;
+}
+.contenedor .bien {
+  width: fit-content;
+  height: fit-content;
+  background: rgb(187, 187, 187);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin: auto;
+  border-radius: 5px;
+  padding: 2px;
+}
+.contenedor .caja.hecho .bien{
+    background: rgb(220, 235, 199);
+    color: rgb(4, 68, 4);
+}
+.contenedor .bien:hover{
+    transform: scale(1.2);
+}
+.contenedor p.num{
+    font-weight: bold;
+    margin: auto 5%;
+}
+
+@media (max-width: 560px) {
+  .contenedor {
+    width: 98%;
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    gap: 2%;
+    grid-auto-rows: 180px;
+  }
+  .contenedor .caja {
+    flex-direction: column;
+    height:100%;
+  }
+  .contenedor .caja p{
+    font-size: .8rem;
+  }
+  .contenedor .caja p.num{
+    margin: 0 auto 0 2%;
+  }
+  .contenedor .caja p.nombre{
+    max-width: 98%;
+    height: 45%;
+    margin: 5% auto 0 auto;
+    overflow-y: scroll;
+   
+  }
+  .contenedor .caja p.hora{
+    font-size: .6rem;
+    margin: auto;
+    max-width: 80%;
+  }
+  .contenedor .caja .quitar {
+    padding: 0 5px;
+    margin: 5px 5% 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+  }
+  .contenedor .caja .bien{
+    padding: 1px 10px;
+    margin: auto auto 5% auto;
+  }
+}
